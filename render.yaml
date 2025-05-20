@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: bolt
+    env: node
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20

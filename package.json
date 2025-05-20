@@ -6,19 +6,7 @@
   "packageManager": "pnpm@9.4.0",
   "sideEffects": false,
   "type": "module",
-  "scripts": {
-    "deploy": "npm run build && wrangler pages deploy",
-    "build": "remix vite:build",
-    "dev": "remix vite:dev",
-    "test": "vitest --run",
-    "test:watch": "vitest",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "start": "vite preview --port=$env:PORT",
-    "typecheck": "tsc",
-    "typegen": "wrangler types",
-    "preview": "pnpm run build && pnpm run start"
-  },
+  "scripts": { "build": "vite build", "start": "vite preview --port=$env:PORT" },
   "engines": {
     "node": ">=18.18.0"
   },
@@ -102,4 +90,5 @@
     "@typescript-eslint/utils": "^8.0.0-alpha.30"
   }
 }
+
 
